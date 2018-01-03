@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DEADBEEF</class>
+ <widget class="QMainWindow" name="DEADBEEF">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>603</width>
+    <height>213</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DEADBEEF</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="frontend.qrc">
+    <normaloff>:/icon_main</normaloff>:/icon_main</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>603</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionDoc"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuTool">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionToggle_log"/>
+   </widget>
+   <addaction name="menuHelp"/>
+   <addaction name="menuTool"/>
+  </widget>
+  <action name="actionDoc">
+   <property name="icon">
+    <iconset resource="frontend.qrc">
+     <normaloff>:/docu</normaloff>:/docu</iconset>
+   </property>
+   <property name="text">
+    <string>Documentation</string>
+   </property>
+   <property name="toolTip">
+    <string>opens the documentation</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="frontend.qrc">
+     <normaloff>:/info</normaloff>:/info</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="toolTip">
+    <string>displays version information</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F1</string>
+   </property>
+  </action>
+  <action name="actionToggle_log">
+   <property name="icon">
+    <iconset resource="frontend.qrc">
+     <normaloff>:/log</normaloff>:/log</iconset>
+   </property>
+   <property name="text">
+    <string>toggle log</string>
+   </property>
+   <property name="toolTip">
+    <string>opens / closes the log window</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="frontend.qrc"/>
+ </resources>
+ <connections/>
+</ui>
